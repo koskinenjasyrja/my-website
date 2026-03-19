@@ -1,0 +1,135 @@
+body {
+    background-color: #111;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+.title-with-notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.note-svg {
+    fill: currentColor;
+    stroke: currentColor;
+    color: #eee;
+}
+
+.flipped {
+    transform: scaleX(-1);
+}
+
+/* PÄÄOTSIKKO */
+header h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-top: -5px;
+}
+
+/* SUUREMPI ARTISTI-KUVA + LISÄTILAA */
+.profile-image {
+    width: 210px;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border: 3px solid #333;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.hr-thin {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 30px auto;
+    width: 80%;
+}
+
+/* GALLERIA-OTSIKKO */
+.gallery h2 {
+    font-size: 48px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.gallery h3 {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+/* NFT-KUVAT — nyt identtisen kokoisia */
+.gallery-grid img {
+    width: 220px;
+    height: 220px;          /* uusi: sama korkeus */
+    object-fit: cover;      /* uusi: rajaa kauniisti */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.55);
+}
+
+/* PIENEMPI ARTISTI COIN */
+.blend-image {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50% !important;
+    mix-blend-mode: lighten;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 12px 0;
+}
+
+a {
+    color: #66ccff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #99e0ff;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    color: #888;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    .gallery-grid img {
+        width: 90%;
+        height: auto;
+    }
+
+    .title-with-notes {
+        gap: 10px;
+    }
+}
