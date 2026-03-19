@@ -1,1 +1,1 @@
-console.log("Web3-sivu ladattu");
+console.log("Koskinen & Syrjä – sivu ladattu");
