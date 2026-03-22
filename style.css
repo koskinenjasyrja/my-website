@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #fafafa;   /* Taustaväri palautettu */
+    background-color: #fafafa;   /* Taustaväri */
 }
 
 /* Otsikkoalue */
@@ -55,7 +55,7 @@ header {
     transition: transform 0.2s ease;
 }
 
-/* Hover-efekti (valinnainen mutta kiva) */
+/* Hover-efekti */
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
