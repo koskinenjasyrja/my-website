@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #fafafa;
+    background-color: #fafafa;   /* Taustaväri palautettu */
 }
 
 /* Otsikkoalue */
@@ -46,11 +46,11 @@ header {
     margin-top: 20px;
 }
 
-/* ⭐ Kaikki NFT-kuvat saman kokoisiksi */
+/* ⭐ Kuvat luonnollisessa koossa — EI pakotettua kokoa */
 .gallery-grid img {
-    width: 250px;      /* Muuta tämä jos haluat isommaksi/pienemmäksi */
+    width: auto;
     height: auto;
-    object-fit: contain;
+    object-fit: none;
     border-radius: 8px;
     transition: transform 0.2s ease;
 }
@@ -60,7 +60,7 @@ header {
     transform: scale(1.05);
 }
 
-/* Linkkilista */
+/* Linkkilista ja muut elementit */
 .hr-thin {
     border: none;
     border-top: 1px solid #ccc;
