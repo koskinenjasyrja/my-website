@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #fafafa;   /* Taustaväri */
+    background-color: #fafafa;
 }
 
 /* Otsikkoalue */
@@ -46,7 +46,7 @@ header {
     margin-top: 20px;
 }
 
-/* ⭐ Kuvat luonnollisessa koossa — EI pakotettua kokoa */
+/* Kuvat luonnollisessa koossa */
 .gallery-grid img {
     width: auto;
     height: auto;
@@ -55,12 +55,11 @@ header {
     transition: transform 0.2s ease;
 }
 
-/* Hover-efekti */
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
 
-/* Linkkilista ja muut elementit */
+/* Linkkilista */
 .hr-thin {
     border: none;
     border-top: 1px solid #ccc;
