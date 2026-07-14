@@ -215,5 +215,67 @@ Tai klikkaa kuvaketta niin pääset suoraa biisiin
     © Koskinen & Syrjä
 </footer>
 
+<!-- POP-UP: OPENSEA -->
+<div id="popupOpenSea" class="popup-overlay">
+  <div class="popup-content">
+    <h2>OpenSea – NFT‑teokset (Polygon)</h2>
+    <p>OpenSeassa voit ostaa valmiiksi mintattuja NFT‑keräilykappaleita musiikkivideoistamme.</p>
+
+    <p><strong>Mitä tarvitset ostamiseen:</strong><br>
+    – Kryptolompakon (MetaMask tms.)<br>
+    – 1 USDC (Polygon‑verkossa)<br>
+    – Pieni määrä MATICia verkkomaksuihin</p>
+
+    <a href="https://opensea.io/collection/koskinenjasyrja" target="_blank" class="popup-button">Avaa OpenSea</a>
+
+    <button class="close-popup" onclick="closePopup('popupOpenSea')">Sulje</button>
+  </div>
+</div>
+
+<!-- POP-UP: MANIFOLD -->
+<div id="popupManifold" class="popup-overlay">
+  <div class="popup-content">
+    <h2>Manifold – Minttaus & keräily</h2>
+    <p>Manifoldissa voit mintata edition‑keräilyversion musiikkivideoistamme suoraan Ethereum‑verkkoon.</p>
+
+    <p><strong>Mitä tarvitset:</strong><br>
+    – Kryptolompakon<br>
+    – ETH:ia minttaukseen ja gas‑maksuihin</p>
+
+    <a href="https://manifold.xyz/@koskinenjasyrja" target="_blank" class="popup-button">Avaa Manifold</a>
+
+    <button class="close-popup" onclick="closePopup('popupManifold')">Sulje</button>
+  </div>
+</div>
+
+<!-- POP-UP: ORCA -->
+<div id="popupOrca" class="popup-overlay">
+  <div class="popup-content">
+    <h2>Orca – Yhtyeen kryptokolikko</h2>
+    <p>Orcassa löydät yhtyeen oman kryptokolikon (K&S). Voit ostaa, vaihtaa ja seurata kolikon arvoa.</p>
+
+    <p><strong>Mitä tarvitset:</strong><br>
+    – Kryptolompakon<br>
+    – Pieni määrä MATICia verkkomaksuihin</p>
+
+    <a href="https://www.orca.so/pools/GYzMKA4L8kWANH5A4SAsinbQHa9FFuL3okDrkQfyrSdc" target="_blank" class="popup-button">Avaa Orca</a>
+
+    <button class="close-popup" onclick="closePopup('popupOrca')">Sulje</button>
+  </div>
+</div>
+
+<!-- POP-UP SCRIPTS -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "flex";
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+
+    
+
 </body>
 </html>
