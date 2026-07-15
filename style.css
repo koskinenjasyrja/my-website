@@ -103,11 +103,12 @@ a:hover {
     background: #2e2ee8;
 }
 
-/* Galleria-grid */
+/* ⭐ Galleria-grid — KORJATTU */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    justify-content: center;
+    gap: 12px; /* Kuvien väli — voit säätää 5–20px */
     width: 90%;
     margin: 0 auto;
 }
