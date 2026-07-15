@@ -20,7 +20,7 @@ header h1 {
     font-weight: 700;
 }
 
-/* Artisti-kuva */
+/* Artisti-kuva (EI MUUTETA) */
 .profile-image {
     width: 200px;
     height: auto;
@@ -34,10 +34,11 @@ header h1 {
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
 
-/* ⭐ NFT-kuvat — EI NELIÖITÄ, EI VENYTYSTÄ */
+/* ⭐ NFT-kuvat — kaikki täsmälleen 230 × 185 px, ei neliöitä */
 .nft-image {
-    width: 200px;     /* sama leveys kaikille */
-    height: auto;     /* EI pakoteta neliöiksi */
+    width: 230px;        /* sama leveys kuin rumapoika */
+    height: 185px;       /* sama korkeus kuin rumapoika */
+    object-fit: cover;   /* EI venytä, EI vääristä, EI neliöitä */
     border-radius: 10px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -105,10 +106,10 @@ a:hover {
     background: #2e2ee8;
 }
 
-/* ⭐ Galleria-grid — EI LEVIÄ */
+/* Galleria-grid — EI LEVIÄ */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 230px));
     justify-content: center;
     gap: 12px;
     width: 90%;
