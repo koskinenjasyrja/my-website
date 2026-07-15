@@ -108,7 +108,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
     justify-content: center;
-    gap: 12px; /* Kuvien väli — voit säätää 5–20px */
+    gap: 12px;
     width: 90%;
     margin: 0 auto;
 }
