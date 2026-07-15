@@ -9,11 +9,17 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Otsikkoalue */
+/* Otsikkoalue – EI TAUSTAKUVAA, EI PIILOKUVIA */
 header {
     padding: 20px;
+    background: none !important;
 }
 
+header img {
+    display: none !important;
+}
+
+/* Otsikon nuottikoristeet */
 .title-with-notes {
     display: flex;
     justify-content: center;
@@ -113,10 +119,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* --------------------------------------------- */
-/* INFO-PAINIKKEET (OpenSea, Manifold, Orca) */
-/* --------------------------------------------- */
-
+/* INFO-PAINIKKEET */
 .info-button {
     margin: 12px 0;
     padding: 10px 18px;
@@ -133,10 +136,7 @@ a:hover {
     background: #2e2ee8;
 }
 
-/* --------------------------------------------- */
 /* POP-UP OVERLAY */
-/* --------------------------------------------- */
-
 .popup-overlay {
     display: none;
     position: fixed;
@@ -150,10 +150,7 @@ a:hover {
     z-index: 9999;
 }
 
-/* --------------------------------------------- */
 /* POP-UP CONTENT */
-/* --------------------------------------------- */
-
 .popup-content {
     background: #ffffff;
     padding: 28px;
