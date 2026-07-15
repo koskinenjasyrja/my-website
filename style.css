@@ -33,6 +33,19 @@ header h1 {
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
 
+/* ⭐ NFT-kuvien hover-efekti (OpenSea + Manifold) */
+.nft-image {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nft-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
 /* Väliotsikko */
 h3 {
     margin-top: 10px;
@@ -43,13 +56,13 @@ h3 {
 .hr-thin {
     border: none;
     border-top: 1px solid #ccc;
-    margin: 40px auto 12px auto;   /* Yhtenäinen väli ylä- ja alapuolella */
+    margin: 40px auto 12px auto;
     width: 80%;
 }
 
 /* Yhtenäinen otsikko viivan jälkeen */
 h2 {
-    margin-top: 0;                 /* Ei ylimääräistä väliä */
+    margin-top: 0;
     margin-bottom: 0.5em;
     font-weight: 600;
 }
@@ -160,7 +173,3 @@ a:hover {
 }
 
 /* Popup animaatio */
-@keyframes popupFadeIn {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
-}
