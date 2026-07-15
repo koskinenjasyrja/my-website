@@ -12,7 +12,6 @@ body {
 /* Otsikkoalue */
 header {
     padding: 20px;
-    background: none;
 }
 
 header h1 {
@@ -31,26 +30,27 @@ header h1 {
 
 .profile-image:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
 
-/* Väliotsikko (Astu universumiin) */
+/* Väliotsikko */
 h3 {
     margin-top: 10px;
     font-weight: 600;
 }
 
-/* Ohuet viivat – yhtenäinen spacing kaikkialla */
+/* Yhtenäinen viiva kaikille osioille */
 .hr-thin {
     border: none;
     border-top: 1px solid #ccc;
-    margin: 25px auto 8px auto;   /* tämä tekee viiva–otsikko-välin yhtenäiseksi */
+    margin: 40px auto 12px auto;   /* Yhtenäinen väli ylä- ja alapuolella */
     width: 80%;
 }
 
-/* Otsikot viivan jälkeen */
+/* Yhtenäinen otsikko viivan jälkeen */
 h2 {
-    margin-top: 0;                /* ei ylimääräistä väliä */
+    margin-top: 0;                 /* Ei ylimääräistä väliä */
+    margin-bottom: 0.5em;
     font-weight: 600;
 }
 
@@ -58,7 +58,6 @@ h2 {
 ul {
     list-style: none;
     padding: 0;
-    text-align: center;
 }
 
 ul li {
