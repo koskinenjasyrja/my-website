@@ -40,23 +40,17 @@ h3 {
     font-weight: 600;
 }
 
-/* Ohuet viivat */
+/* Ohuet viivat – yhtenäinen spacing kaikkialla */
 .hr-thin {
     border: none;
     border-top: 1px solid #ccc;
-    margin: 25px auto 10px auto; /* pienempi väli */
+    margin: 25px auto 8px auto;   /* tämä tekee viiva–otsikko-välin yhtenäiseksi */
     width: 80%;
 }
 
-/* Galleria-osion perusrakenne */
-.gallery {
-    padding-top: 0;      /* poistaa ylimääräisen ylävälin */
-    margin-top: 0;       /* varmistaa ettei tule työntöä */
-    padding-bottom: 20px;
-}
-
-.gallery h2 {
-    margin-top: 4px;     /* tuo otsikon lähemmäksi viivaa */
+/* Otsikot viivan jälkeen */
+h2 {
+    margin-top: 0;                /* ei ylimääräistä väliä */
     font-weight: 600;
 }
 
@@ -78,30 +72,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-/* NFT-kuvien galleria */
-.gallery-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.gallery-grid img {
-    width: auto;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 /* Info-painikkeet */
