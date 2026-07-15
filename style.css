@@ -9,37 +9,23 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Otsikkoalue – EI TAUSTAKUVAA, EI PIILOKUVIA */
+/* Otsikkoalue */
 header {
     padding: 20px;
-    background: none !important;
+    background: none;
 }
 
-header img {
-    display: none !important;
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 
-/* Otsikon nuottikoristeet */
-.title-with-notes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.note-svg {
-    color: #444;
-}
-
-.note-svg.flipped {
-    transform: scaleX(-1);
-}
-
-/* Artisti- ja muut kuvat */
+/* Artisti-kuva */
 .profile-image {
     width: 200px;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -48,55 +34,30 @@ header img {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-/* Galleria */
-.gallery {
-    padding: 20px;
-    text-align: center;
-}
-
-.gallery-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-/* NFT-kuvat */
-.gallery-grid img {
-    width: auto;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+/* Väliotsikko (Astu universumiin) */
+h3 {
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 /* Ohuet viivat */
 .hr-thin {
     border: none;
     border-top: 1px solid #ccc;
-    margin: 30px 0;
+    margin: 25px auto 10px auto; /* pienempi väli */
+    width: 80%;
 }
 
-/* Tekstit */
-h2 {
+/* Galleria-osion perusrakenne */
+.gallery {
+    padding-top: 0;      /* poistaa ylimääräisen ylävälin */
+    margin-top: 0;       /* varmistaa ettei tule työntöä */
+    padding-bottom: 20px;
+}
+
+.gallery h2 {
+    margin-top: 4px;     /* tuo otsikon lähemmäksi viivaa */
     font-weight: 600;
-    margin-bottom: 0.2em;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.5;
-    opacity: 0.9;
-    margin-top: 5px;
-    margin-bottom: 10px;
 }
 
 /* Linkkilista */
@@ -119,7 +80,31 @@ a:hover {
     text-decoration: underline;
 }
 
-/* INFO-PAINIKKEET */
+/* NFT-kuvien galleria */
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Info-painikkeet */
 .info-button {
     margin: 12px 0;
     padding: 10px 18px;
@@ -136,7 +121,7 @@ a:hover {
     background: #2e2ee8;
 }
 
-/* POP-UP OVERLAY */
+/* Popup-overlay */
 .popup-overlay {
     display: none;
     position: fixed;
@@ -150,7 +135,7 @@ a:hover {
     z-index: 9999;
 }
 
-/* POP-UP CONTENT */
+/* Popup-content */
 .popup-content {
     background: #ffffff;
     padding: 28px;
@@ -171,7 +156,7 @@ a:hover {
     line-height: 1.5;
 }
 
-/* POP-UP BUTTON */
+/* Popup-button */
 .popup-button {
     display: inline-block;
     margin-top: 18px;
@@ -188,7 +173,7 @@ a:hover {
     background: #2e2ee8;
 }
 
-/* CLOSE BUTTON */
+/* Close button */
 .close-popup {
     margin-top: 20px;
     padding: 8px 16px;
@@ -205,7 +190,7 @@ a:hover {
     background: #222;
 }
 
-/* POP-UP ANIMAATIO */
+/* Popup animaatio */
 @keyframes popupFadeIn {
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
