@@ -33,7 +33,7 @@ header h1 {
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
 
-/* ⭐ NFT-kuvien hover-efekti (OpenSea + Manifold) */
+/* ⭐ NFT-kuvien hover-efekti */
 .nft-image {
     width: 200px;
     border-radius: 10px;
@@ -101,6 +101,15 @@ a:hover {
 
 .info-button:hover {
     background: #2e2ee8;
+}
+
+/* Galleria-grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* Popup-overlay */
