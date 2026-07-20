@@ -101,6 +101,7 @@ Klikkaa kuvaketta avataksesi teokset suoraan Manifoldissa tai katso minttaus‑o
 </div>
 
 <hr class="hr-thin">
+
 <!-- ZORA Base (Zora) – nopea ja kevyt edition‑minttaus -->
 <h2> NFT‑teokset – Zora (Base)  </h2>
 
@@ -122,6 +123,7 @@ Klikkaa kuvaketta avataksesi teokset suoraan Zorassa tai katso minttaus‑ohjeet
 </div>
 
 <hr class="hr-thin">
+
 <!-- ORCA -->
 <h2>Artistin oma kryptovaluutta kolikko K&S (Solana coin)</h2>
 
@@ -144,8 +146,47 @@ Klikkaa kuvaketta avataksesi kolikon suoraan Orcassa tai katso osto‑ohjeet pai
     <button onclick="openPopup('popupOrca')" class="info-button">Orca-ohjeet</button>
 </div>
 
-
 <hr class="hr-thin">
+
+<!-- VERKKOVERTAILU MODAL LISÄTTY TÄHÄN -->
+<button id="openNetworks" class="info-btn">Verkkojen vertailu</button>
+
+<div id="networksModal" class="modal">
+  <div class="modal-content ks-style">
+    <span class="close">&times;</span>
+
+    <h2>Verkkojen vertailu: Polygon, Ethereum ja Base</h2>
+
+    <table class="net-table">
+      <tr>
+        <th>Verkko</th>
+        <th>Käyttö sivulla</th>
+        <th>Tyyppi</th>
+        <th>Vahvuudet</th>
+      </tr>
+      <tr>
+        <td><strong>Polygon</strong></td>
+        <td>OpenSea – halpa ja helppo NFT‑kauppa</td>
+        <td>Layer‑2</td>
+        <td>Nopeat ja halvat transaktiot</td>
+      </tr>
+      <tr>
+        <td><strong>Ethereum</strong></td>
+        <td>Manifold – premium‑minttaus</td>
+        <td>Layer‑1</td>
+        <td>Korkea turvallisuus</td>
+      </tr>
+      <tr>
+        <td><strong>Base</strong></td>
+        <td>Zora – edition‑minttaus</td>
+        <td>Layer‑2 (OP Stack)</td>
+        <td>Erittäin halpa ja nopea</td>
+      </tr>
+    </table>
+
+  </div>
+</div>
+<!-- /VERKKOVERTAILU MODAL -->
 
 <h2>Linkkejä</h2>
 
@@ -162,7 +203,7 @@ Klikkaa kuvaketta avataksesi kolikon suoraan Orcassa tai katso osto‑ohjeet pai
     © Koskinen & Syrjä
 </footer>
 
-<!-- POP-UP IKKUNAT -->
+<!-- POP-UP IKKUNAT (alkuperäiset, ei muutettu) -->
 
 <div id="popupOpenSea" class="popup-overlay">
   <div class="popup-content">
@@ -267,6 +308,15 @@ Klikkaa kuvaketta avataksesi kolikon suoraan Orcassa tai katso osto‑ohjeet pai
   function closePopup(id) {
     document.getElementById(id).style.display = "none";
   }
+
+  /* Verkkovertailu modal */
+  const modal = document.getElementById("networksModal");
+  const btn = document.getElementById("openNetworks");
+  const span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = () => modal.style.display = "block";
+  span.onclick = () => modal.style.display = "none";
+  window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
 </script>
 
 </body>
