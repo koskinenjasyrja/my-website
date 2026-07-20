@@ -7,6 +7,7 @@ body {
     background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
     background-repeat: repeat;
     font-family: Arial, sans-serif;
+    line-height: 1.2; /* pieni riviväli */
 }
 
 /* Otsikkoalue */
@@ -18,6 +19,7 @@ header h1 {
     margin: 0;
     font-size: 2.2rem;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 /* Artisti-kuva (EI MUUTETA) */
@@ -36,9 +38,9 @@ header h1 {
 
 /* ⭐ NFT-kuvat — kaikki täsmälleen 230 × 185 px, ei neliöitä */
 .nft-image {
-    width: 230px;        /* sama leveys kuin rumapoika */
-    height: 185px;       /* sama korkeus kuin rumapoika */
-    object-fit: cover;   /* EI venytä, EI vääristä, EI neliöitä */
+    width: 230px;
+    height: 185px;
+    object-fit: cover;
     border-radius: 10px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -53,6 +55,7 @@ header h1 {
 h3 {
     margin-top: 10px;
     font-weight: 600;
+    line-height: 1.2;
 }
 
 /* Yhtenäinen viiva kaikille osioille */
@@ -68,6 +71,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 0.5em;
     font-weight: 600;
+    line-height: 1.2;
 }
 
 /* Linkkilista */
@@ -78,6 +82,7 @@ ul {
 
 ul li {
     margin: 5px 0;
+    line-height: 1.2;
 }
 
 a {
@@ -140,53 +145,18 @@ a:hover {
     text-align: center;
     box-shadow: 0 0 25px rgba(0,0,0,0.35);
     animation: popupFadeIn 0.25s ease;
+    /* EI rivivälin muutosta */
 }
 
 .popup-content h2 {
     margin-top: 0;
     margin-bottom: 12px;
+    /* EI rivivälin muutosta */
 }
 
 .popup-content p {
-    line-height: 1.5;
+    line-height: 1.5; /* alkuperäinen, EI muuteta */
 }
 
 /* Popup-button */
-.popup-button {
-    display: inline-block;
-    margin-top: 18px;
-    padding: 10px 20px;
-    background: #4a4aff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: background 0.2s ease;
-}
-
-.popup-button:hover {
-    background: #2e2ee8;
-}
-
-/* Close button */
-.close-popup {
-    margin-top: 20px;
-    padding: 8px 16px;
-    background: #444;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 15px;
-    transition: background 0.2s ease;
-}
-
-.close-popup:hover {
-    background: #222;
-}
-
-/* Popup animaatio */
-@keyframes popupFadeIn {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
-}
+.popup-button
