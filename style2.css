@@ -135,20 +135,21 @@ a:hover {
     z-index: 9999;
 }
 
-/* Popup-content */
+/* Popup-content - LEVENNETTY JA TEKSTIEN LUETTAVUUTTA PARANNETTU */
 .popup-content {
     background: #ffffff;
     padding: 28px;
-    max-width: 420px;
+    max-width: 600px; /* Muutettu 420px -> 600px (X-suunnan lisätila) */
     width: 90%;
     border-radius: 12px;
-    text-align: center;
+    text-align: left; /* Muutettu left, jotta ohjeet ja listat rivittyvät nätisti */
     box-shadow: 0 0 25px rgba(0,0,0,0.35);
     animation: popupFadeIn 0.25s ease;
     /* EI rivivälin muutosta */
 }
 
 .popup-content h2 {
+    text-align: center; /* Pitää otsikon keskellä */
     margin-top: 0;
     margin-bottom: 12px;
     /* EI rivivälin muutosta */
@@ -156,6 +157,24 @@ a:hover {
 
 .popup-content p {
     line-height: 1.5; /* alkuperäinen, EI muuteta */
+}
+
+.popup-content ol {
+    padding-left: 20px; /* Varmistaa, että numerolista asettuu kauniisti */
+    line-height: 1.5;
+}
+
+.popup-content ol li {
+    margin-bottom: 10px; /* Pieni hajurako lista-asioiden välille */
+}
+
+/* Keskittää pop-upin painikkeet, vaikka teksti on vasemmalla */
+.popup-content .popup-button,
+.popup-content .close-popup {
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Popup-button */
