@@ -282,27 +282,28 @@ Klikkaa kuvaketta avataksesi kolikon suoraan Orcassa tai katso osto‑ohjeet pai
 <!-- ZORA POPUP -->
 <div id="popupZora" class="popup-overlay">
   <div class="popup-content">
-    <h2>Zora – Minttaus & keräily (Base‑verkko)</h2>
-    <p>Zorassa voit mintata musiikkivideoidemme keräilyversioita Base‑verkkoon. Jokainen minttaus luo uuden tokenin (edition), joka siirtyy minttaajan omaan lompakkoon.</p>
+    <h2>Zora – Musiikkivideoiden keräily (Base‑verkko)</h2>
+    
+    <p>Zorassa voit ostaa musiikkivideoidemme digitaalisia keräilyversioita Base-verkkoon. Jokainen ostos luo sinulle uniikin digitaalisen teoksen (NFT:n), joka siirtyy automaattisesti omaan Zora-lompakkoosi. Voit siirtää ostamasi teoksen halutessasi myös muihin lompakkoihisi Zorasta. Jos kirjaudut Zoraan ensimmäistä kertaa, se luo automaattisti sinulle oman sisäisen lompakon.</p>
 
-    <p><strong>Mitä tarvitset minttaukseen:</strong><br>
-    – Kryptolompakon (Coinbase Wallet, Rainbow, MetaMask)<br>
-    – Pienen määrän ETH:ia Base‑verkossa (verkkomaksuihin)<br>
-    – Halutessasi USDC:tä, jos teos on maksullinen</p>
+    <p><strong>Miten ostaminen toimii:</strong></p>
+    <ol>
+      <li>Kirjaudu Zoraan lompakollasi (esim. MetaMask) (selaimen oikea yläkulma) ja valitse Base-verkko.</li>
+      <li>Siirrä Zoraan ETH-valuuttaa Base-verkossa esim. MetaMaskista: Kopioi Zoran oman sisäisen lompakon 0x-alkuinen osoite. Avaa oma MetaMaskisi (varmista, että verkkona on Base) ja lähetä pieni siivu ETH / Base-valuttaa (esim. 1–2 dollaria) tuohon kopioimaasi Zora-osoitteeseen. Zora käyttää pientä määrää ETH-valuuttaa Gas-maksuihin.</li>
+      <li>Valitse haluamasi musiikkivideo Zorassa.</li>
+      <li>Paina ”Buy”: ostopainiketta. Zora käyttää nyt sisäisessä lompakossasi olevia ETH-rahoja siirtomaksun kuittaamiseen.</li>
+    </ol>
 
-    <p><strong>Miten minttaus toimii:</strong><br>
-    1. Avaa Zora‑profiilimme.<br>
-    2. Valitse musiikkivideo.<br>
-    3. Paina “Mint”.<br>
-    4. Hyväksy Base‑verkkomaksu lompakossasi.<br>
-    5. Token siirtyy automaattisesti lompakkoosi.</p>
+    <p><strong>Huom!</strong> Jos sinulla on Zoran sisäisessä lompakossa ennestään ETH-valuttaa, yllä olevaa siirtoa (kohta 2) ei tarvitse tehdä.</p>
 
-    <a href="https://zora.co/@koskinenjasyrja" target="_blank" class="popup-button">Avaa Zora</a>
+    <!-- PAINIKKEET SÄILYTETTY ENNALLAAN -->
+    <a href="https://zora.co" target="_blank" class="popup-button">Avaa Zora</a>
 
     <button class="close-popup" onclick="closePopup('popupZora')">Sulje</button>
   </div>
 </div>
 
+    
 <script>
   function openPopup(id) {
     document.getElementById(id).style.display = "flex";
